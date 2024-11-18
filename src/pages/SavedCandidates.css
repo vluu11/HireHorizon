@@ -1,0 +1,30 @@
+  .saved-candidates {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .candidate-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .email {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .email:hover {
+    text-decoration: underline;
+  }
+  
+  .reject {
+    margin-left: 100px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

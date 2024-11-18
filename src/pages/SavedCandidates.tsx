@@ -21,9 +21,9 @@ const SavedCandidates = () => {
   }
 
   return (
-    <div>
+    <div className="saved-candidates">
       <h1>Potential Candidates</h1>
-      <table>
+      <table className="table">
         <thead>
           <tr>
             <th>Image</th>
@@ -38,13 +38,13 @@ const SavedCandidates = () => {
           {savedCandidates.map((candidate, index) => (
             <tr key={index}>
               <td>
-                <img src={candidate.avatar_url} alt={candidate.name || candidate.login}/>
+                <img src={candidate.avatar_url} alt={candidate.name || candidate.login} className="candidate-avatar" />
               </td>
               <td>{candidate.name || candidate.login}</td>
               <td>{candidate.location || 'Unknown'}</td>
               <td>
                 {candidate.email ? (
-                  <a href={`mailto:${candidate.email}`} >
+                  <a href={`mailto:${candidate.email}`} className="email">
                     {candidate.email}
                   </a>
                 ) : (
@@ -53,7 +53,7 @@ const SavedCandidates = () => {
               </td>
               <td>{candidate.company || 'N/A'}</td>
               <td>
-                <button onClick={() => handleReject(index)}>-</button>
+                <button className="reject" onClick={() => handleReject(index)}>-</button>
               </td>
             </tr>
           ))}
