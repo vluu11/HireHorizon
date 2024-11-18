@@ -28,7 +28,7 @@ The application is deployed and accessible via the provided link. Follow these s
 
 - Developer: Vuong Luu
 - GitHub: https://github.com/vluu11/HireHorizon
-- Deploy: 
+- Deploy: https://hirehorizon-v25c.onrender.com
 
 ## License
 
